@@ -1,6 +1,8 @@
-# workshop-docker-101
-A workshop covering Docker fundamentals to jump start learning and practical challenges for real-life devops.
+> [!NOTE]
+> This repository is deliberately kept bare with simple outline and prequisites. We will update it with all hands-on labs near the workshop date.
 
+# Docker Workshop
+A workshop covering Docker fundamentals to jump start learning and practical challenges for real-life devops.
 
 ## Docker Fundamentals: Hands-on Workshop for Beginners and Beyond
 
@@ -13,53 +15,57 @@ This workshop will introduce attendees to Docker, the leading containerization p
 
 ## Prerequisites:
 
-- Basic understanding of Linux commands (optional)
+- Basic understanding of your preferred terminal
+- Basic familiarity with development in any programming language (Python, Javascript, Golang, Java etc.)
+- Laptop* with good battery backup
+
+> You can share one laptop among 2-3 participants and work together. Actually, that is the recommended approach to learn.
 
 ### Hardware/Software Requirements:
 
-- Laptop with Docker installed (we'll provide installation instructions)
-- Terminal access
+- Laptop with Docker Desktop[1] installed. Check [Official Installation Guides](https://docs.docker.com/get-docker/)
+- Terminal access (Powershell on Windows, Bash on Mac/Linux)
 - Code editor (optional)
+
+> [!IMPORTANT]
+> 1. On some Linux distributions you may have Docker Engine (Docker CE) and CLI installed instead of Docker Desktop. That is perfectly fine. If you have Docker Desktop installed then it comes bundled with Docker Engine and CLI.
+> 2. Reach out to us by creating an issue in the repository if you face any difficulties.
 
 ## Workshop Outline:
 
-### 1. Introduction to Containers and Docker (15 mins)
+### 1. Introduction to Containers and Docker
 
   - What are containers? Benefits of containerization
   - Introduction to Docker: Architecture, components (Docker daemon, client, image, container, registry)
-  - **[Prerequisite]**[ Hands-on: Install and verify Docker setup](excercises/00-setup-docker/INSTALL.md)
-  - **Bonus Challenge (Advanced):** Discuss use cases for containerization beyond development (e.g., micro-services, CI/CD pipelines)
+  - **Bonus Challenge (Advanced):** Discuss use cases for containerization beyond local development (e.g., micro-services, CI/CD pipelines)
 
-> NOTE:
-> For follwing steps we can use parts of official Docker [Getting started guide](https://github.com/docker/getting-started) and [Getting started app](https://github.com/docker/getting-started-app/).
-
-
-### 2. Working with Docker Images (45 mins)
+### 2. Working with Docker Images
 
   - Docker Hub: Public registry for pre-built images
   - **[Prerequisite]** Pulling and running pre-built images (e.g., hello-world, a simple web server)
   - Hands-on: Pull and run a Docker image  (Beginners)
   - Exploring container details: `docker ps`, `docker inspect` (Beginners)
-  - **Bonus Challenge (Advanced):** Build a simple Dockerfile from scratch
+  - **Bonus Challenge (Intermediate):** Build a simple Dockerfile from scratch to package a web app
 
-### 3. Deep Dive into Docker Commands (45 mins)
+### 3. Deep Dive into Docker Command
 
   - Common Docker commands: `docker run`, `docker stop`, `docker start`, `docker logs`, `docker exec`
   - Understanding options for running containers (detached mode, environment variables, port mapping)
   - Hands-on: Manage containers using various commands (Beginners)
-  - **Bonus Challenge (Advanced):** Utilize volumes to persist data within containers
+  - **Bonus Challenge (Intermidiate):** Utilize volumes to persist data within containers
   - **Bonus Challenge (Advanced):** Explore Docker networks and link containers
 
-### 4. Building and Sharing Docker Images (45 mins)
+### 4. Building and Sharing Docker Images
 
   - Introduction to Dockerfiles: The recipe for building custom images
   - Exploring a Dockerfile structure: Base image, instructions (COPY, RUN, CMD, etc.)
   - Building a simple Docker image from a Dockerfile (e.g., a Python web app)
   - Hands-on: Build and run a custom Docker image (Beginners)
   - Pushing images to Docker Hub (optional)
-  - **Bonus Challenge (Advanced):** Multi-stage builds for creating smaller and optimized images
+  - **Bonus Challenge (Intermediate):** Multi-stage builds for creating smaller and optimized images
+  - **Bonus Challenge (Advanced):** Security best practices for Dockerfile
 
-### 5. Introduction to Docker Compose (30 mins)
+### 5. Introduction to Docker Compose
 
   - Managing multi-container applications with Docker Compose
   - Compose files: Defining services, networks, volumes for complex deployments
@@ -70,8 +76,3 @@ This workshop will introduce attendees to Docker, the leading containerization p
 
   - Open discussion for any questions or challenges faced during the workshop
   - Additional resources and next steps for learning Docker
-
-### Bonus Materials:
-
-- Provide a list of resources for further learning (Docker documentation, tutorials, online courses)
-- Share example code repositories for the hands-on exercises
