@@ -24,12 +24,13 @@ This workshop will introduce attendees to Docker, the leading containerization p
 ### Hardware/Software Requirements:
 
 - Laptop with Docker Desktop[1] installed. Check [Official Installation Guides](https://docs.docker.com/get-docker/)
-- Terminal access (Powershell on Windows, Bash on Mac/Linux)
+- Terminal access (Windows Terminal on Win10/11, Bash/Zsh/Fishshell on Mac/Linux)
+- [Sign Up for a FREE Docker Hub account](https://hub.docker.com/signup), only if not done already while Docker Desktop setup
 - Code editor (optional)
 
 > [!IMPORTANT]
 > 1. On some Linux distributions you may have Docker Engine (Docker CE) and CLI installed instead of Docker Desktop. That is perfectly fine. If you have Docker Desktop installed then it comes bundled with Docker Engine and CLI.
-> 2. Reach out to us by creating an issue in the repository if you face any difficulties.
+> 2. Setting up Docker on Windows can be tedious and confusing. Reach out to us by creating an issue in the repository if you face any difficulties.
 
 ## Workshop Outline:
 
